@@ -1,0 +1,35 @@
+# Demo 02 - Generate Personalized Marketing Content Using AI
+
+- Create an Instant Cloud Flow
+  - Go to Power Automate
+  - Click Create → Instant cloud flow
+  - Name your flow: Generate Personalized Marketing Message
+  - Choose Manually trigger a flow
+  - Click Create
+- Add Inputs to the Trigger
+  - In the Manually trigger a flow card, click + Add an input → Text (Name: Recipient Name)
+  - Add another input → Text (Name: Product Name)
+  - Add another input → Dropdown (Name: Tone); Choices: Friendly, Professional, Excited
+- Add AI Builder “Create text with GPT” Action
+  - Click + New step
+  - Search for Create text with GPT (AI Builder)
+  - In the Prompt box, enter: "Write a [Tone] marketing email for a customer named [Recipient Name] about a product called [Product Name]. Make it no more than 5 sentences long."
+  - Replace the placeholders by selecting Dynamic content:
+    - [Tone] → select Tone
+    - [Recipient Name] → select Recipient Name
+    - [Product Name] → select Product Name
+- Output the Message
+  - Send by Email
+  - Click + New step
+  - Search for Send an email (V2)
+  - Set:
+    - To: Your email (for demo)
+    - Subject: Your Custom Marketing Message
+    - Body: Insert GPT-generated content
+- Test the Flow
+  - Click Test → Manually
+  - Provide sample inputs:
+    - Recipient Name: Sophia
+    - Product Name: AquaShield
+    - Tone: Excited
+- Run the flow
