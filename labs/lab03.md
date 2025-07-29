@@ -1,3 +1,3 @@
-# Lab 03 - Create a Dataverse Table
+# Lab 05 - Build an Approval Workflow
 
-Execute the exercise at <https://learn.microsoft.com/en-us/training/modules/get-started-with-powerapps-common-data-service/3-create-a-cds-entity>
+Execute the exercise at <https://learn.microsoft.com/en-us/training/modules/build-approval-flows/2-create-approval-request>

@@ -1,3 +1,3 @@
-# Lab 05 - Build an Approval Workflow
+# Lab 07 - Build a Flow That Processes User Input
 
-Execute the exercise at <https://learn.microsoft.com/en-us/training/modules/build-approval-flows/2-create-approval-request>
+Execute the exercise at <https://learn.microsoft.com/en-us/training/modules/manage-user-information/2-tokens>
