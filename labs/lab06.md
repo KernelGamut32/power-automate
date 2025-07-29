@@ -1,4 +1,4 @@
-# Lab 08 - Build an Approval Flow for a SharePoint List
+# Lab 06 - Build an Approval Flow for a SharePoint List
 
 - Create a new SharePoint site using a name of your choice
 - Use "Team site" and the "Standard team" template
