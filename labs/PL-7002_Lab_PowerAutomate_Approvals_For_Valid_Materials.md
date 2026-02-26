@@ -54,7 +54,7 @@ By the end of this lab, learners will be able to:
 ## What you will build
 
 - Dataverse enhancements:
-  - **Approval Status** (Pending/Approved/Rejected)
+  - **Approval Status** (Pending/Awaiting Approval/Approved/Rejected)
   - **Approval Requested On**
   - **Approved On**
   - **Approver Comments**
@@ -82,7 +82,7 @@ Add the following columns (names may be prefixed automatically in your environme
 
 | Display name | Type | Required | Notes / Values |
 | --- | --- | --- | --- |
-| Approval Status | Choice | Yes | Values: **Pending**, **Approved**, **Rejected**. Default = **Pending** |
+| Approval Status | Choice | Yes | Values: **Pending**, **Awaiting Approval**, **Approved**, **Rejected**. Default = **Pending** |
 | Approval Requested On | Date and time | No | Timestamp when approval is requested |
 | Approved On | Date and time | No | Timestamp when approval completes |
 | Approver Comments | Multiple lines of text | No | Store approval/rejection comments |

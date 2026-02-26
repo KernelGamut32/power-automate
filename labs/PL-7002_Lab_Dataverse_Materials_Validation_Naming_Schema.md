@@ -258,7 +258,7 @@ Add a **Condition**:
 
 - Left: `outputs('cmpPrefix')`
 - Operator: **is equal to**
-- Right: `outputs('cmpRule)?['pfx_prefix']`
+- Right: `outputs('cmpRule')?['pfx_prefix']`
 
 If **No** - use copy/paste:
 
@@ -306,19 +306,19 @@ last(outputs('cmpSegments'))
 
 - Left: `length(outputs('cmpNumber'))`
 - Operator: **is equal to**
-- Right: `outputs('cmpRule')?['pfx_numericlength]`
+- Right: `outputs('cmpRule')?['pfx_numericlength']`
 
 If **No**:
 
 1. Set `varIsValid` = `false`
-2. Set `varMessage` = `Invalid numeric segment length. Expected outputs('cmpRule')?['pfx_numericlength] digits.`
+2. Set `varMessage` = `Invalid numeric segment length. Expected outputs('cmpRule')?['pfx_numericlength'] digits.`
 3. Go to Step 10
 
 If **Yes**, continue.
 
 #### 9.2 Condition: numeric segment contains only digits
 
-Use condition with isInt('pfx_numbercolumn') is equal to true
+Use condition with `isInt(outputs('cmpNumber'))` is equal to `true`
 
 Power Automate doesn’t have a perfect regex check everywhere, but a reliable simulation is:
 
@@ -387,7 +387,7 @@ Set fields:
 - **Validation Status**:
   - If `varIsValid` is true → `Valid`
   - Else → `Invalid`
-  - `if(variables('varIsValid'), 'Valid', 'Invalid')`
+  - `if(variables('varIsValid'), 2, 3)`
 - **Validation Message**: `varMessage` [`variables('varMessage')`]
 - **Last Validated On**: `utcNow()`
 - **Validation Correlation ID**: `varCorrelationId` [`variables('varCorrelationId`)`]
